@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent" android:layout_width="match_parent" >
+
+    <group android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/timetable"
+            android:checked="false"
+            android:title="@string/timetable_string"
+            android:icon="@drawable/menu_timetable"
+            />
+
+
+        <item
+            android:id="@+id/notice"
+            android:checked="false"
+            android:title="@string/notice_string"
+            android:icon="@drawable/menu_news"
+            />
+
+        <item
+            android:id="@+id/points"
+            android:checked="false"
+            android:title="@string/points_string"
+            android:icon="@drawable/menu_reward"
+            />
+
+
+        <item
+            android:id="@+id/mission"
+            android:checked="false"
+            android:title="@string/mission_string"
+            android:icon="@drawable/menu_mission"
+            />
+
+        <item
+            android:id="@+id/history"
+            android:checked="false"
+            android:title="@string/history_string"
+            android:icon="@drawable/menu_history"
+            />
+        <item
+            android:id="@+id/service"
+            android:checked="false"
+            android:title="@string/service_string"
+            android:icon="@drawable/menu_customer_service"
+            />
+        <item
+            android:id="@+id/login"
+            android:checked="false"
+            android:title="@string/login_string"
+            android:icon="@drawable/menu_logout"/>
+
+    </group>
+</menu>

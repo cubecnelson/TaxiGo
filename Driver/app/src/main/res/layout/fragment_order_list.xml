@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp"
+    tools:context="com.example.sans.myapplication.Utility.OrderList.OrderListFragment">
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.790"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/order_recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/no_order">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wait"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="請稍等"
+                android:textColor="#888"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暫時未有訂單"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/l_grey"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="離線"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:id="@+id/offline_button"
+        android:background="@drawable/grey_button"
+        android:layout_gravity="bottom"
+         />
+
+</LinearLayout>

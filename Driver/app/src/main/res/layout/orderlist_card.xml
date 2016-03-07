@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+    >
+    <!-- A CardView that contains a TextView -->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            card_view:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="100dp"
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        android:layout_weight="0.925"
+                        >
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="7.5dp"
+                            >
+
+                            <TextView
+                                android:text="由 "
+                                android:textSize="18dp"
+                                android:textColor="@color/orange"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <TextView
+                                android:id="@+id/from_text"
+                                android:text="手信街"
+                                android:textColor="@android:color/black"
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="7.5dp"
+                            >
+
+                            <TextView
+                                android:text="去 "
+                                android:textSize="18dp"
+                                android:textColor="@color/orange"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <TextView
+                                android:id="@+id/to_text"
+                                android:text="至尊花城"
+                                android:textSize="18dp"
+                                android:textColor="@android:color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp"
+                            android:id="@+id/remarks_area"
+                            android:visibility="gone"
+                            >
+                                <TextView
+                                    android:text="*"
+                                    android:textSize="12dp"
+                                    android:textColor="@color/orange"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    />
+
+                                <TextView
+                                    android:text="傷殘人士"
+                                    android:textSize="12dp"
+                                    android:id="@+id/remarks"
+                                    android:textColor="@color/orange"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                <Button
+                    android:id="@+id/order_button"
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:layout_weight="0.075"
+                    android:text="搶"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:padding="10dp"
+                    android:background="@drawable/orange_button"
+                    />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>

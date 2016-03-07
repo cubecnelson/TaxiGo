@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">TaxiGo Driver</string>
+    <string name="prompt_phone">電話號碼</string>
+    <string name="prompt_password">請輸入驗證碼</string>
+    <string name="action_sign_in">登入</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="plus_sign_out">Switch Google+ account</string>
+    <string name="plus_disconnect">Disconnect from Google+</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="serial_key_button">獲取驗證碼</string>
+    <string-array name="country_codes">
+        <item>+852</item>
+        <item>+853</item>
+        <item>+86</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="navigation_item_1">Home</string>
+    <string name="navigation_item_2">Events</string>
+    <string name="mission_string">任務</string>
+    <string name="timetable_string">行程表</string>
+    <string name="notice_string">最新消息</string>
+    <string name="points_string">累積積分</string>
+    <string name="subheader">Subheader</string>
+    <string name="history_string">乘車記錄</string>
+    <string name="service_string">服務中心</string>
+    <string name="login_string">登出</string>
+
+    <!-- Edit Profile -->
+    <string name="tele_no">電話</string>
+    <string name="name">名稱</string>
+    <string name="car_no">車牌</string>
+    <string name="order_success">搶單成功</string>
+    <string name="order_incomplete">預約單</string>
+    <string name="order_cancel">取消訂單</string>
+
+
+    <!-- Service -->
+    <string name="office">辦事處</string>
+    <string name="office_address_tag">地址：</string>
+    <string name="office_address">澳門商業大馬路財富中心17樓G室</string>
+    <string name="office_no_tag">電話：</string>
+    <string name="office_no">(853) 2888 4888</string>
+    <string name="fax_tag">傳真：</string>
+    <string name="fax_no">(853) 2872 3906</string>
+    <string name="wechat">taxigo</string>
+    <string name="hotline_tag">廿四小時德晉熱線：</string>
+    <string name="hotline">(853) 6283 8383</string>
+    <string name="call">致電我們</string>
+
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_menu_item">MenuItemActivity</string>
+
+    <!-- Gift -->
+    <string name="gift_history">兌換紀錄</string>
+    <string name="gift_info">禮品資料</string>
+    <string name="title_activity_congrad">CongradActivity</string>
+    <string name="title_activity_assign">AssignActivity</string>
+    <string name="title_activity_no_connection">" "</string>
+</resources>

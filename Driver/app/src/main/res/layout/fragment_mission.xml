@@ -1,0 +1,337 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    tools:context="com.example.sans.myapplication.Utility.Mission.MissionFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:background="@color/orange"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日內完成"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:id="@+id/require_count"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="張訂單"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="進度：已完成"
+                android:textSize="12dp"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/progress_count"
+                android:textSize="12dp"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="張"
+                android:textSize="12dp"
+                android:textColor="@android:color/white"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/progressbar_orange"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:padding="7.5dp"
+                    android:id="@+id/progress_back">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/finish"
+                        android:src="@drawable/menu_mission"
+                        android:tint="@color/white"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/progress_fore"
+                    android:background="@drawable/progressbar_white"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:padding="7.5dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/icon"
+                        android:src="@drawable/progressbar_car"
+                        />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="0dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_height="90dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_weight="0.3"
+                android:gravity="top|center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/gift_02"
+                    android:contentDescription="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:padding="7dp"
+                android:orientation="vertical"
+                android:layout_weight="0.700"
+                >
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="7.5dp"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/from_text"
+                        android:text="超微粒可拆洗素色壓扣頸枕－灰"
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="7.5dp"
+                    >
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/remarks"
+                        android:text="條款及細則"
+                        android:textSize="12dp"
+                        android:textColor="@color/grey"
+                        android:layout_gravity="bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:layout_weight="0.1"
+                android:text="未領獎"
+                android:textColor="@color/grey"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:clickable="false"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="0dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="提示！"
+            android:textColor="@color/orange"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:textColor="@color/grey"
+                android:text="完成今日任務後，必需要即日到TaxiGo門市換領當日獎勵，過後作廢"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:id="@+id/mission_history"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="任務紀錄"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:tint="@color/grey"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/arrow_right"
+            />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="數量有限，換完即止"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>

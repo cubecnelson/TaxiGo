@@ -1,0 +1,31 @@
+<resources>
+
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16dp</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="OrangeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="drawerArrowStyle">@style/OrangeDrawerArrowStyle</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16dp</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/grey</item>
+    </style>
+
+    <style name="OrangeDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

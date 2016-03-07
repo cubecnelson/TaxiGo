@@ -1,0 +1,296 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="com.example.sans.myapplication.Utility.EditProfile.EditProfileFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_margin="10dp"
+       android:orientation="vertical"
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:gravity="center"
+           >
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:id="@+id/online_pp"
+               android:src="@drawable/default_pp"
+               android:layout_margin="40dp"
+               />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+                   android:layout_weight="0.25"
+                   android:text="@string/tele_no"
+                   android:background="@drawable/edit_text"
+                   android:textColor="@android:color/black"
+                   android:padding="5pt"
+                   />
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_weight="0.75"
+                   >
+
+                   <Spinner
+                       android:layout_width="0dp"
+                       android:layout_weight=".25"
+                       android:layout_height="40dp"
+                       android:layout_marginTop="-1dp"
+                       android:background="@drawable/edit_text"
+                       android:entries="@array/country_codes"
+                       android:id="@+id/country_codes"
+                       android:focusable="false"/>
+
+                   <AutoCompleteTextView android:id="@+id/phone" android:layout_width="0dp"
+                       android:layout_weight=".75"
+                       android:layout_height="40dp"
+                       android:text="00000000"
+                       android:inputType="phone"
+                       android:textSize="15dp"
+                       android:textColor="@android:color/black"
+                       android:background="@drawable/edit_text"
+                       android:padding="5pt"
+                       android:maxLines="1"
+                       android:ems="10"
+                       android:singleLine="true"
+                       android:focusable="false"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+                   android:layout_weight="0.25"
+                   android:text="@string/name"
+                   android:background="@drawable/edit_text"
+                   android:textColor="@android:color/black"
+                   android:padding="5pt"
+                   />
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_weight="0.75"
+                   >
+
+                   <EditText
+                       android:id="@+id/surname"
+                       android:layout_width="0dp"
+                       android:layout_height="40dp"
+                       android:background="@drawable/edit_text"
+                       android:layout_weight=".25"
+                       android:padding="5pt"
+                       android:focusable="false"
+                       />
+
+                   <EditText
+                       android:layout_width="0dp"
+                       android:layout_height="40dp"
+                       android:background="@drawable/edit_text"
+                       android:layout_weight=".75"
+                       android:padding="5pt"
+                       android:id="@+id/given"
+                       android:focusable="false"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+                   android:layout_weight="0.25"
+                   android:text="@string/car_no"
+                   android:background="@drawable/edit_text"
+                   android:textColor="@android:color/black"
+                   android:padding="5pt"
+
+                   />
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_weight="0.75"
+                   >
+
+                   <EditText
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:background="@drawable/edit_text"
+                       android:id="@+id/license"
+                       android:padding="5pt"
+                       android:focusable="false"
+                       />
+
+
+                   />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <View
+               android:background="@color/l_grey"
+               android:layout_width = "fill_parent"
+               android:layout_height="0.5dip"
+               android:layout_centerVertical ="true"
+               android:layout_marginTop="15dp"
+               android:layout_marginBottom="5dp"
+               />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:visibility="gone">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="40dp"
+                   android:text="@string/tele_no"
+                   android:textColor="@color/grey"
+                   android:padding="5pt"
+                   android:focusable="false"
+                   />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="0.33"
+                       android:background="@drawable/edit_text"
+                       android:gravity="center"
+                       android:orientation="vertical"
+                       android:padding="15dp"
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="20"
+                           android:textSize="20dp"
+                           android:textColor="@android:color/black"
+                           android:focusable="false"
+
+                           />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/order_success"
+                           android:textColor="@android:color/black"
+                           android:focusable="false"
+                           />
+
+                   </LinearLayout>
+
+
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="0.33"
+                       android:background="@drawable/edit_text"
+                       android:gravity="center"
+                       android:orientation="vertical"
+                       android:padding="15dp"
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="5"
+                           android:textSize="20dp"
+                           android:textColor="@android:color/black"
+
+                           />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/order_incomplete"
+                           android:textColor="@android:color/black"
+
+                           />
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="0.33"
+                       android:background="@drawable/edit_text"
+                       android:gravity="center"
+                       android:orientation="vertical"
+                       android:padding="15dp"
+                       >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="2"
+                           android:textSize="20dp"
+                           android:textColor="@android:color/black"
+
+                           />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/order_cancel"
+                           android:textColor="@android:color/black"
+
+                           />
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+
+
+   </LinearLayout>
+
+
+</FrameLayout>

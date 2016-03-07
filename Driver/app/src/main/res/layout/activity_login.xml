@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="@color/bg"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/login_top"
+        android:layout_weight="0.20"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:layout="@layout/fragment_login_top"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/login_bot"
+        android:layout_weight="0.80"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:layout="@layout/fragment_login_bot" />
+
+
+</LinearLayout>

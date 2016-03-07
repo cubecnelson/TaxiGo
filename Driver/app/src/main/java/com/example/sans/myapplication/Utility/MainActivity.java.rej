@@ -1,0 +1,9 @@
+diff a/Driver/app/src/main/java/com/example/sans/myapplication/Utility/MainActivity.java b/Driver/app/src/main/java/com/example/sans/myapplication/Utility/MainActivity.java	(rejected hunks)
+@@ -376,6 +376,7 @@
+         super.onDestroy();
+         controller.stopGetStatus();
+         controller.stopAquireOrder();
++
+     }
+ 
+     @Override

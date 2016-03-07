@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:statusBarColor">@color/grey</item>
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+       <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="OrangeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/orange</item>
+    </style>
+
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/grey</item>
+    </style>
+
+    <style name="OrangeDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+
+
+</resources>
